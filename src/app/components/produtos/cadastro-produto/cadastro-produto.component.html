@@ -1,0 +1,36 @@
+<div class="container">
+    <h1>Lista de Produtos</h1>
+
+    <div class="formulario-tabela">
+        <div class="formulario">
+            <div>
+                <label for="campo-nome">Nome</label>
+                <input type="text" id="campo-nome" [(ngModel)]="nome">
+            </div>
+            <button (click)="cadastrarProduto()">Salvar</button>
+        </div>
+        <div class="tabela">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nome</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for(produto of produtos; track produto){
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <button>Editar</button>
+                                <button>Apagar</button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>

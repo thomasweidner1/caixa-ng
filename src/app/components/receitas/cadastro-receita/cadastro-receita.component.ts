@@ -14,7 +14,7 @@ export class CadastroReceitaComponent {
 
   proximoId: number = 0;
 
-  // idParaEditar é uma variável do tip number que é nullable, ou seja, ela pode ou não ter valor
+  // idParaEditar é uma variável do tipo number que é nullable, ou seja, ela pode ou não ter valor
   idParaEditar?: number; 
   nome: string = " ";
   valor: number = 0.0;
